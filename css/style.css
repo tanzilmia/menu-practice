@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  transition: 0.6s;
+}
+.nav__wrapping{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 60px;
+  background: red;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.menu__box{
+  display: flex;
+  position: relative;
+
+}
+.main__menu{
+  display: flex;
+}
+.main__menu li{
+  margin-left: 15px;
+  line-height: 60px;
+}
+.nav__close{
+  position: absolute;
+  right: -100%;
+}
+.logo{
+  line-height: 60px;
+}
+.nav__toggle{
+  font-size: 25px;
+  position: absolute;
+  right: -100%;
+  color: red;
+}
+@media screen and (max-width: 550px) {
+   .menu__box{
+     width: 250px;
+     height: 100vh;
+     background: rgb(250, 245, 245);
+     right: -100%;
+     z-index: 4;
+     
+   }
+   .main__menu{
+     flex-direction: column;
+     display: flex;
+     
+   }
+   .nav__wrapping{
+    padding-right: 0;
+   }
+   .nav__wrapping{
+   
+    max-width: 100%;
+    height:100vh;
+    background: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+   .nav__close{
+     right: 0;
+     font-size: 25px;
+     cursor: pointer;
+     font-weight: bold;
+     padding: 10px 40px;
+   }
+   .nav__toggle{
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right:0;
+    color: rgb(44, 42, 42);
+    padding: 10px 40px;
+    cursor: pointer;
+
+   }
+}
+
+/* ============Hide and show ======== */
+.show__menu{
+  right: 0%;
+  
+}
